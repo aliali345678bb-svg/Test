@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقعي الشخصي</title>
+    <style>
+        /* كود CSS لتنسيق الموقع */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            text-align: center;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+        }
+        .container {
+            padding: 50px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #message {
+            margin-top: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>مرحباً بك في موقعي</h1>
+    </header>
+
+    <div class="container">
+        <p>هذا موقع ويب بسيط تم إنشاؤه باستخدام HTML و CSS و JavaScript.</p>
+        <button id="myButton">اضغط هنا</button>
+        <p id="message"></p>
+    </div>
+
+    <script>
+        // كود JavaScript لإضافة تفاعلية
+        document.getElementById("myButton").addEventListener("click", function() {
+            document.getElementById("message").innerHTML = "شكراً لضغطك على الزر! لقد عمل الكود بنجاح.";
+        });
+    </script>
+
+</body>
+</html>
